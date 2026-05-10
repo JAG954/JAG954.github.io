@@ -80,7 +80,7 @@ button:focus-visible,
 }
 
 h1, h2, h3 {
-  letter-spacing: -0.005em;
+  letter-spacing: 0;
 }
 
 h2.h1 {

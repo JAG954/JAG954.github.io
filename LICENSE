@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Jishnu A. Ghosh
+Copyright (c) 2026 Jishnu Auro Ghosh
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,18 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Portfolio Content Reservation
+
+For this repository, the Software covered by the license grant above means the
+website source code, including HTML, CSS, JavaScript, and related site
+framework code. It does not grant unrestricted permission to reuse, reproduce,
+modify, publish, distribute, sublicense, or sell portfolio content or
+professional materials, including but not limited to resume content, project
+writeups, written portfolio descriptions, branding, images, documents, linked
+deliverables, project reports, engineering analyses, presentations, or other
+non-code materials unless a specific file or asset states otherwise.
+
+Attribution and credit should be preserved where reasonable. No trademark,
+publicity, privacy, endorsement, or affiliation rights are granted by this
+license.
