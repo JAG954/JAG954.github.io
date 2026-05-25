@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Crimson Pro", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #fafaf9;
+  --panel: #ffffff;
+  --panel-soft: #f5f5f4;
+  --text: #1c1917;
+  --muted: #57534e;
+  --border: #e7e5e4;
+  --accent: #8b2c15;
+  --accent-light: #fdf4f2;
+}
+
+body {
+  background-color: var(--bg-soft);
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+/* Custom KaTeX layout fixes */
+.katex-display {
+  margin: 0.5em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+}
+.katex {
+  font-size: 1.1em !important;
+}

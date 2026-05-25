@@ -1,0 +1,6 @@
+{
+  "name": "Linear Program Formulator",
+  "description": "Formulate optimization problems as general, standard, and matrix linear programs with a step-by-step formulation breakdown from natural language descriptions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
