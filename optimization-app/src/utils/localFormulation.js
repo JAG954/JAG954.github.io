@@ -198,6 +198,44 @@ export function formulateLocally(prompt) {
   return buildFormulation(definition, prompt)
 }
 
+const UNSUPPORTED_FEATURE_PATTERNS = [
+  {
+    feature: 'integer_variables',
+    label: 'integer variables',
+    keywords: ['integer', 'integral', 'whole number', 'mip', 'mixed-integer', 'mixed integer'],
+    note:
+      'Prompt mentions integer or mixed-integer requirements. The workbench currently relaxes integrality and treats variables as continuous. A real MIP solver would be required for an integral solution.',
+  },
+  {
+    feature: 'binary_variables',
+    label: 'binary / yes-no variables',
+    keywords: ['binary', 'yes/no', 'yes or no', '0/1', '0-1', 'on/off', 'open or close', 'open/close'],
+    note:
+      'Prompt mentions binary / 0-1 decisions. The workbench relaxes these to continuous variables in [0, +inf). Binary semantics are not enforced.',
+  },
+  {
+    feature: 'nonlinear_terms',
+    label: 'nonlinear terms',
+    keywords: ['quadratic', 'nonlinear', 'non-linear', 'squared', 'x^2', 'multiplied by', 'product of', 'logarithm', 'log(', 'exp(', 'exponential'],
+    note:
+      'Prompt suggests nonlinear or product terms. The workbench only handles linear coefficients; nonlinear structure is ignored.',
+  },
+  {
+    feature: 'stochastic_or_robust',
+    label: 'stochastic or robust',
+    keywords: ['probability', 'stochastic', 'random', 'uncertain', 'robust', 'chance constraint'],
+    note:
+      'Prompt suggests stochastic or robust modeling. The workbench treats all coefficients as deterministic.',
+  },
+]
+
+export function detectUnsupportedFeatures(prompt) {
+  const normalized = String(prompt || '').toLowerCase()
+  return UNSUPPORTED_FEATURE_PATTERNS
+    .filter(({ keywords }) => keywords.some((needle) => normalized.includes(needle)))
+    .map(({ feature, label, note }) => ({ feature, label, note }))
+}
+
 function chooseTemplate(prompt) {
   const normalized = String(prompt || '').toLowerCase()
 
@@ -228,6 +266,10 @@ function buildFormulation(definition, rawText) {
     ...constraint,
     expression_latex: `${formatExpression(constraint.coefficients)} ${operatorLatex(constraint.operator)} ${constraint.rhs}`,
   }))
+
+  const detected = detectUnsupportedFeatures(rawText)
+  const warnings = ['Generated from a local deterministic template when the live NLP API is unavailable or not configured.']
+  detected.forEach((entry) => warnings.push(entry.note))
 
   const standardVariables = [
     ...definition.variables.map((variable) => ({
@@ -295,13 +337,13 @@ function buildFormulation(definition, rawText) {
       status: 'success',
       formulation_type: 'linear_program',
       confidence: 0.88,
-      warnings: ['Generated from a local deterministic template when the live NLP API is unavailable or not configured.'],
+      warnings,
       assumptions: [
         'Decision variables are continuous and nonnegative.',
         'All coefficients are deterministic and linear.',
         'Integer worker, shipment, or production counts are relaxed for LP compatibility.',
       ],
-      unsupported_features: [],
+      unsupported_features: detected,
     },
     original_problem: {
       raw_text: rawText,

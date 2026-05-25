@@ -226,3 +226,28 @@
     width: 100%;
   }
 }
+
+.limitation-card {
+  border: 1px solid var(--line);
+  border-left-width: 4px;
+  border-radius: 0.5rem;
+  background: var(--paper);
+  padding: 1rem 1.15rem;
+}
+
+.limitation-card strong {
+  color: var(--deep);
+  display: block;
+}
+
+.limitation-card-info {
+  border-left-color: var(--accent);
+}
+
+.limitation-card-warn {
+  border-left-color: #b54708;
+}
+
+.limitation-card-ok {
+  border-left-color: #1f7a4d;
+}

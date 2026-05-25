@@ -10,8 +10,8 @@ const TABS = [
   { id: 'standard', label: 'Standard form' },
   { id: 'matrix', label: 'Matrix payload' },
   { id: 'derivation', label: 'Derivation' },
-  { id: 'solver', label: 'Solver readiness' },
-  { id: 'json', label: 'JSON' },
+  { id: 'solver', label: 'Solver results' },
+  { id: 'json', label: 'JSON export' },
 ]
 
 export default function OptimizationWorkbench() {
@@ -127,16 +127,17 @@ export default function OptimizationWorkbench() {
               LP Formulation Workbench
             </h1>
             <p className="lead mb-0">
-              Enter an operations research problem, review the algebraic formulation,
-              inspect standard equality form, and export the structured payload expected
-              by Simplex, IPM, or OR-Tools integrations.
+              An AI-assisted workbench that converts natural-language linear program
+              descriptions into structured mathematical formulations, then solves them
+              with a custom two-phase Simplex implementation and prepares the same
+              payload for external solver verification.
             </p>
           </div>
           <div className="col-lg-4">
             <div className={`workbench-status workbench-status-${status.tone}`}>
               <span>Processing mode</span>
               <strong>{status.label}</strong>
-              <small>{apiUrl ? status.detail : 'Static-safe cached demo active'}</small>
+              <small>{apiUrl ? status.detail : 'No live API configured. Running in cached demo mode.'}</small>
             </div>
           </div>
         </div>
@@ -183,10 +184,10 @@ export default function OptimizationWorkbench() {
                 />
                 <div className="d-flex flex-column flex-md-row justify-content-between gap-3 mt-3">
                   <p className={`small mb-0 ${isPromptOverLimit ? 'text-danger' : 'text-muted'}`}>
-                    {inputText.length}/{PROMPT_MAX_LENGTH.toLocaleString()} characters. Live API requests are cached per browser session.
+                    {inputText.length}/{PROMPT_MAX_LENGTH.toLocaleString()} characters. Live API requests are cached per browser session; the button falls back to the cached demo if no backend is reachable.
                   </p>
                   <button type="button" className="btn btn-dark" onClick={handleFormulate} disabled={!canSubmit} aria-busy={loading}>
-                    {loading ? 'Formulating...' : 'Formulate with NLP'}
+                    {loading ? 'Formulating...' : apiUrl ? 'Formulate (live + fallback)' : 'Formulate (cached demo)'}
                   </button>
                 </div>
                 {isPromptEmpty && (
@@ -220,6 +221,19 @@ export default function OptimizationWorkbench() {
                   {copied ? 'Copied JSON' : 'Copy JSON'}
                 </button>
               </div>
+
+              {formulation.metadata?.unsupported_features?.length > 0 && (
+                <div className="alert alert-warning" role="status">
+                  <strong>Heads up — unsupported features detected:</strong>
+                  <ul className="mb-0 mt-2">
+                    {formulation.metadata.unsupported_features.map((entry) => (
+                      <li key={entry.feature}>
+                        <strong>{entry.label}.</strong> {entry.note}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               <div className="workbench-tabs" role="tablist" aria-label="Formulation views">
                 {TABS.map((tab) => (
@@ -425,10 +439,10 @@ function SolverReadiness({ formulation, solverData, solverResults, onRunSimplex 
           </div>
           <div className="solver-action-buttons">
             <button type="button" className="btn btn-dark" onClick={onRunSimplex} disabled={!solverData || solverResults.simplex?.status === 'running'}>
-              {solverResults.simplex?.status === 'running' ? 'Running Simplex...' : 'Run Simplex'}
+              {solverResults.simplex?.status === 'running' ? 'Running Simplex...' : 'Run Simplex (browser-local)'}
             </button>
-            <button type="button" className="btn btn-outline-dark" disabled>
-              Run IPM
+            <button type="button" className="btn btn-outline-dark" disabled title="IPM integration pending in this branch">
+              Run IPM (pending)
             </button>
           </div>
         </div>
@@ -440,7 +454,7 @@ function SolverReadiness({ formulation, solverData, solverResults, onRunSimplex 
           <ExportRow label="Variables" value={`${solverData.variableNames.length} ordered variables`} />
           <ExportRow label="Constraints" value={`${solverData.A.length} equality rows`} />
           <ExportRow label="Matrix shape" value={`${solverData.A.length} x ${solverData.A[0]?.length || 0}`} />
-          <ExportRow label="Payload mapping" value="A_eq -> A, b_eq -> b, c -> c, variables -> variableNames" />
+          <ExportRow label="Payload mapping" value="A_eq -> A, b_eq -> b, original objective coefficients -> c (sign preserved), variables -> variableNames" />
         </div>
       </div>
       <SimplexResultPanel result={solverResults.simplex} />

@@ -5,6 +5,8 @@ import './styles/optimizationWorkbench.css'
 import './styles/modelProblems.css'
 import ModelProblemSection from './components/ModelProblemSection.jsx'
 import OptimizationWorkbench from './components/OptimizationWorkbench.jsx'
+import ArchitectureSection from './components/ArchitectureSection.jsx'
+import LimitationsSection from './components/LimitationsSection.jsx'
 
 function SiteHeader() {
   return (
@@ -71,6 +73,8 @@ export default function App() {
       <main id="optimization-main">
         <OptimizationWorkbench />
         <ModelProblemSection />
+        <ArchitectureSection />
+        <LimitationsSection />
       </main>
 
       <SiteFooter />

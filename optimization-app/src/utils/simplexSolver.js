@@ -3,12 +3,18 @@ const MAX_ITERATIONS = 500
 
 export function solveSimplex(solverData) {
   const normalized = normalizeSolverData(solverData)
-  const { A, b, c, variableNames, objectiveType } = normalized
+  const { A, b, variableNames, objectiveType } = normalized
   const rowCount = A.length
-  const variableCount = c.length
+  const variableCount = normalized.c.length
+
+  // SolverData.c holds the ORIGINAL (sign-preserved) coefficients. The
+  // two-phase Simplex below minimizes `c_min^T x`, so we flip sign for
+  // maximization here rather than baking that flip into the export.
+  const objectiveSign = objectiveType === 'maximize' ? -1 : 1
+  const c = normalized.c.map((value) => value * objectiveSign)
 
   if (rowCount === 0) {
-    return solveUnconstrained(normalized)
+    return solveUnconstrained({ ...normalized, c })
   }
 
   const rows = A.map((row, rowIndex) => {
