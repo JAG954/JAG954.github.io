@@ -1,0 +1,1854 @@
+{
+  "sourceCollection": "https://sites.math.washington.edu/~burke/crs/407/models/",
+  "sourceTitle": "University of Washington Department of Mathematics, Math 407 LP Models collection",
+  "models": [
+    {
+      "modelNumber": 1,
+      "modelId": "model-1",
+      "title": "Model 1: Product Manufacturing",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m1.html",
+      "problemText": [
+        "A product can be made in three sizes, large, medium, and small, which yield a net unit profit of $12, 10, and 9, respectively. The company has three centers where this product can be manufactured and these centers have a capacity of turning out 550, 750, and 275 units of the product per day, respectively, regardless of the size or combination of sizes involved.",
+        "Manufacturing this product requires cooling water and each unit of large, medium, and small sizes produced require 21, 17, and 9 gallons of water, respectively. The centers 1, 2, and 3 have 10,000, 7000, and 4200 gallons of cooling water available per day, respectively. Market studies indicate that there is a market for 700, 900, and 340 units of the large, medium, and small sizes, respectively, per day. By company policy, the fraction (scheduled production)/(center's capacity) must be the same at all the centers. The company wishes to maximize its profits. Model this problem as a linear program."
+      ],
+      "tables": []
+    },
+    {
+      "modelNumber": 2,
+      "modelId": "model-2",
+      "title": "Model 2: Pig Farming",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m2.html",
+      "problemText": [
+        "A farmer is raising pigs for market, and he wishes to determine the quantities of the available types of feed that should be given to each pig to meet certain nutritional requirements at a minimum cost. The number of units of each type of basic nutritional ingredient contained within a kilogram of each feed type is given in the following table, along with the daily nutritional requirements and feed costs:",
+        "Formulate the linear programming model for this problem."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Nutritional ingredient",
+            "Nutritional ingredient",
+            "Kilogram of corn",
+            "Kilogram of tankage",
+            "Kilogram of alfalfa",
+            "Minimum daily requirement"
+          ],
+          "rows": [
+            [
+              "Carbohydrates Protein Vitamins",
+              "Carbohydrates Protein Vitamins",
+              "90 30 10",
+              "20 80 20",
+              "40 60 50",
+              "200 180 150"
+            ],
+            [
+              "Cost (in cents)",
+              "Cost (in cents)",
+              "35",
+              "30",
+              "25",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 3,
+      "modelId": "model-3",
+      "title": "Model 3: Toll Booth Scheduling",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m3.html",
+      "problemText": [
+        "The Northeast Tollway out of Chicago has a toll plaza with the following staffing demands during each 24-hour period:",
+        "Each collector works 4 hours, is off one hour, and then works another 4 hours. A collector can be started at any hour. Assume the objective is to minimize the number of collectors hired, formulate the appropriate LP."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "HOURS",
+            "COLLECTORS NEEDED"
+          ],
+          "rows": [
+            [
+              "12 a.m. to 6 a.m.",
+              "2"
+            ],
+            [
+              "6 a.m. to 10 a.m.",
+              "8"
+            ],
+            [
+              "10 a.m. to noon",
+              "4"
+            ],
+            [
+              "noon to 4 p.m.",
+              "3"
+            ],
+            [
+              "4 p.m. to 6 p.m.",
+              "6"
+            ],
+            [
+              "6 p.m. to 10 p.m.",
+              "5"
+            ],
+            [
+              "10 p.m. to 12 midnight",
+              "3"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 4,
+      "modelId": "model-4",
+      "title": "Model 4: Chemical Blending",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m4.html",
+      "problemText": [
+        "A company makes a blend consisting of two chemicals, 1 and 2, in the ratio 5:2 by weight. These chemicals can be manufactured by three different processes using two different raw materials and a fuel. Production data are given in the table at the top. The company would like to know how much time should each process be run in order to maximize the total amount of blend manufactured.",
+        "Formulate this problem as an LP."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Process",
+            "Requirements per Unit Time — Raw Material 1 (units)",
+            "Requirements per Unit Time — Raw Material 1 (units)",
+            "Requirements per Unit Time — Raw Material 2 (units)",
+            "Requirements per Unit Time — Raw Material 2 (units)",
+            "Requirements per Unit Time — Fuel (units)",
+            "Output per Unit Time — Chemical 1 (units)",
+            "Output per Unit Time — Chemical 1 (units)",
+            "Output per Unit Time — Chemical 2 (units)",
+            "Output per Unit Time — Chemical 2 (units)"
+          ],
+          "rows": [
+            [
+              "1",
+              "9",
+              "9",
+              "5",
+              "5",
+              "50",
+              "9",
+              "9",
+              "6",
+              "6"
+            ],
+            [
+              "2",
+              "6",
+              "6",
+              "8",
+              "8",
+              "75",
+              "12",
+              "12",
+              "4",
+              "4"
+            ],
+            [
+              "3",
+              "4",
+              "4",
+              "11",
+              "11",
+              "100",
+              "10",
+              "10",
+              "6",
+              "6"
+            ],
+            [
+              "Amount available",
+              "200",
+              "200",
+              "400",
+              "400",
+              "1850",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 5,
+      "modelId": "model-5",
+      "title": "Model 5: Cereal Blending",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m5.html",
+      "problemText": [
+        "The table at the bottom gives a composition of various foods used in making cereals. The other material in each food is fiber, water, etc. The company blends these food materials and makes two kinds of cereals. In the process of blending, 3% of protein, 5% of starch, and 10% of minerals and vitamins are completely lost from the mix. For each 100 kg of foods added in the blend, the blending process adds 5 kg of other material (mainly water and fat).",
+        "Cereal type 1 sells for $1.50/kg. It should contain at least 22% protein, 2% of minerals and vitamins, and at most 30% of starch by weight. Cereal type 2 sells for $1.00/kg. It should contain at least 30% starch by weight. The company would like to determine the most profitable product mix that meets the requirements described above.",
+        "Formulate this problem as an LP."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Food",
+            "Percentage Content (by Weight) — Protein",
+            "Percentage Content (by Weight) — Starch",
+            "Percentage Content (by Weight) — Minerals, Vitamins,etc.",
+            "Percentage Content (by Weight) — Other Material",
+            "Price ($/kg)",
+            "Availability per Day (kg)"
+          ],
+          "rows": [
+            [
+              "1",
+              "45",
+              "12",
+              "4",
+              "39",
+              "0.68",
+              "1500"
+            ],
+            [
+              "2",
+              "7",
+              "38",
+              "1",
+              "54",
+              "0.27",
+              "500"
+            ],
+            [
+              "3",
+              "12",
+              "25",
+              "2",
+              "61",
+              "0.31",
+              "1000"
+            ],
+            [
+              "4",
+              "27",
+              "40",
+              "3",
+              "30",
+              "0.45",
+              "2000"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 6,
+      "modelId": "model-6",
+      "title": "Model 6: Warehousing",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m6.html",
+      "problemText": [
+        "A company needs to lease warehouse storage space over the next 5 months. Just how much space will be required in each of these months is known. However, since these space requirements are quite different, it may be most economical to lease only the amount needed each month on a month-by-month basis. On the other hand, the additional cost for leasing space for additional months is much less than for the first month, so it may be less expensive to lease the maximum amount needed for the entire 5 months. Another option is the intermediate approach of changing the total amount of space leased (by adding a new lease and/or having an old lease expire) at least once but not every month.",
+        "The space requirement (in thousands of square feet) and the leasing costs (in hundreds of dollars) for the various leasing periods are as follows:",
+        "The objective is to minimize the total leasing cost for meeting the space requirement. Formulate the linear programming model for this problem."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Month",
+            "Required space",
+            "",
+            "Leasing period (months)",
+            "Cost ($) per 1,000 sq ft leased"
+          ],
+          "rows": [
+            [
+              "1",
+              "30",
+              "",
+              "1",
+              "650"
+            ],
+            [
+              "2",
+              "20",
+              "",
+              "2",
+              "1,000"
+            ],
+            [
+              "3",
+              "40",
+              "",
+              "3",
+              "1,350"
+            ],
+            [
+              "4",
+              "10",
+              "",
+              "4",
+              "1,600"
+            ],
+            [
+              "5",
+              "50",
+              "",
+              "5",
+              "1,900"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 7,
+      "modelId": "model-7",
+      "title": "Model 7: Electronics Company",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m7.html",
+      "problemText": [
+        "An electronics company has a contract to deliver 21,475 radios within the next four weeks. The client is willing to pay $20 for each radio delivered by the end of the first week, $18 for those delivered by the end of the second week, $16 by the end of the third week, and $14 by the end of the fourth week. Since each worker can assemble only 50 radios per week, the company cannot meet the order with its present labor force of 40; hence it must hire and train temporary help. Any of the experienced workers can be taken off the assembly line to instruct a class of three trainees; after one week of instruction, each of the trainees can either proceed to the assembly line or instruct additional new classes.",
+        "At present, the company has no other contracts; hence some workers may become idle once the delivery is completed. All of them, whether permanent or temporary, must be kept on the payroll 'til the end of the fourth week. The weekly wages of a worker, whether assembling, instructing, or being idle, are $200; the weekly wages of a trainee are $100. The production costs, excluding the worker's wages, are $5 per radio. The company's aim is to maximize the total net profit. Formulate this as an LP problem (not necessarily in the standard form)."
+      ],
+      "tables": []
+    },
+    {
+      "modelNumber": 8,
+      "modelId": "model-8",
+      "title": "Model 8: Summer Job",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m8.html",
+      "problemText": [
+        "Suppose you have just inherited $6,000 and you want to invest it. Upon hearing this news, two different friends have offered you an opportunity to become a partner in two different entrepreneurial ventures, one planned by each friend. In both cases, this investment would involve expending some of your time next summer as well as putting up cash. Becoming a full partner in the first friend's venture would require an investment of $5,000 and 400 hours, and your estimated profit (ignoring the value of your time) would be $4,500. The corresponding figures for the second friend's venture are $4,000 and 500 hours, with an estimated profit to you of $5,000. However, both friends are flexible and would allow you to come in at any fraction of a full partnership you would like; your share of the profit would be proportional to this fraction.",
+        "Because you were looking for an interesting summer job anyway (maximum of 600 hours), you have decided to participate in one or both friends ventures in which combination would maximize your total estimated profit. You now need to solve the problem of finding the best combination."
+      ],
+      "tables": []
+    },
+    {
+      "modelNumber": 9,
+      "modelId": "model-9",
+      "title": "Model 9: Investments over Time",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m9.html",
+      "problemText": [
+        "An investor has money-making activities A and B available at the beginning of each of the next 5 years (call them years 1 to 5). Each dollar invested in A at the beginning of 1 year returns $1.40 (a profit of $0.40) 2 years later (in time for immediate reinvestment). Each dollar invested in B at the beginning of 1 year returns $1.70 3 years later.",
+        "In addition, money-making activities C and D will each be available at one time in the future. Each dollar investment in C at the beginning of year 2 returns $1.90 at the end of year 5. Each dollar invested in D at the beginning of year 5 returns $1.30 at the end of year 5.",
+        "The investor begins with $50,000 and wishes to know which investment plan maximizes the amount of money that can be accumulated by the beginning of year 6. Formulate the linear programming model for this problem."
+      ],
+      "tables": []
+    },
+    {
+      "modelNumber": 10,
+      "modelId": "model-10",
+      "title": "Model 10: Detergent Production",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m10.html",
+      "problemText": [
+        "The Rosseral Company is a small to medium size detergent manufacturing company. It is one of several companies having production facilities for a new, nonpolluting \"washday whitener\" which goes by the name of NPW. Rosseral can sell NPW to other detergent manufacturers for $0.80 per gallon. Rosseral itself manufactures detergent that uses NPW. This NPW can be purchased outside for $1.20 per gallon (shipping and handling charges have been added) or be obtained from Rosseral's own production. Each gallon of detergent produced requires .1 gallon of NPW. Production costs for NPW and detergent are respectively $0.50 and $0.60 per gallon. For the detergent production this cost does not include any cost for the .1 gallon of NPW used in each gallon of detergent. Detergent can be sold for $0.70 per gallon. Production capacities at Rosseral are: NPW: 10,000 gallons per month; detergent: 120,000 gallons per month. Formulate the problem of maximizing profit as a linear program and solve it."
+      ],
+      "tables": []
+    },
+    {
+      "modelNumber": 11,
+      "modelId": "model-11",
+      "title": "Model 11: A packing problem",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m11.html",
+      "problemText": [
+        "A cargo plane has three compartments for storing cargo: front, center, and back. These compartments have capacity limits on both weight and space, as summarized below:",
+        "Furthermore, the weight of the cargo in the respective compartments must be the same proportion of that compartment's weight capacity to maintain the balance of the airplane.",
+        "The following four cargoes have been offered for shipment on an upcoming flight as space is available:",
+        "Any portion of these cargoes can be accepted. The object is to determine how much (if any) of each cargo should be accepted and how to distribute each among the compartments to maximize the total profit for the flight."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Compartment",
+            "Weight capacity (tons)",
+            "Space capacity (cu ft)"
+          ],
+          "rows": [
+            [
+              "Front",
+              "12",
+              "7,000"
+            ],
+            [
+              "Center",
+              "18",
+              "9,000"
+            ],
+            [
+              "Back",
+              "10",
+              "5,000"
+            ]
+          ]
+        },
+        {
+          "caption": "",
+          "headers": [
+            "Cargo",
+            "Weight (tons)",
+            "Volume (cu ft/ton)",
+            "Profit ($/ton)"
+          ],
+          "rows": [
+            [
+              "1",
+              "20",
+              "500",
+              "280"
+            ],
+            [
+              "2",
+              "16",
+              "700",
+              "360"
+            ],
+            [
+              "3",
+              "25",
+              "600",
+              "320"
+            ],
+            [
+              "4",
+              "13",
+              "400",
+              "250"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 12,
+      "modelId": "model-12",
+      "title": "Model 12: Alloy (Blending)",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m12.html",
+      "problemText": [
+        "A company desires to blend a new alloy of 40 percent tin, 35 percent zinc, and 25 percent lead from several available allows having the following properties:",
+        "The objective is to determine the proportions of these alloys that should be blended to produce the new alloy at a minimum cost. Formulate the linear programming model for this problem."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Property",
+            "Alloy — 1",
+            "Alloy — 2",
+            "Alloy — 3",
+            "Alloy — 4",
+            "Alloy — 5"
+          ],
+          "rows": [
+            [
+              "Percentage tin",
+              "60",
+              "25",
+              "45",
+              "20",
+              "50"
+            ],
+            [
+              "Percentage lead",
+              "30",
+              "60",
+              "10",
+              "30",
+              "10"
+            ],
+            [
+              "Cost ($/lb)",
+              "19",
+              "17",
+              "23",
+              "21",
+              "25"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 13,
+      "modelId": "model-13",
+      "title": "Model 13: Forestry Problem",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m13.html",
+      "problemText": [
+        "A forestry company has four sites on which they grow trees. They are considering four species of trees, the pines, spruces, walnuts, and other hardwoods. Data on the problem are given below. How much area should the company devote to the growing of various species in the various sites?"
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Site Number",
+            "Area Available at Site (ka)",
+            "Expected Annual Yield from Species (km^3/ka) — Pine",
+            "Expected Annual Yield from Species (km^3/ka) — Spruce",
+            "Expected Annual Yield from Species (km^3/ka) — Walnut",
+            "Expected Annual Yield from Species (km^3/ka) — Hardwood",
+            "Expected Annual Revenue from Species (money units per ka) — Pine",
+            "Expected Annual Revenue from Species (money units per ka) — Spruce",
+            "Expected Annual Revenue from Species (money units per ka) — Walnut",
+            "Expected Annual Revenue from Species (money units per ka) — Hardwood"
+          ],
+          "rows": [
+            [
+              "1",
+              "1500",
+              "17",
+              "14",
+              "10",
+              "9",
+              "16",
+              "12",
+              "20",
+              "18"
+            ],
+            [
+              "2",
+              "1700",
+              "15",
+              "16",
+              "12",
+              "11",
+              "14",
+              "13",
+              "24",
+              "20"
+            ],
+            [
+              "3",
+              "900",
+              "13",
+              "12",
+              "14",
+              "8",
+              "17",
+              "10",
+              "28",
+              "20"
+            ],
+            [
+              "4",
+              "600",
+              "10",
+              "11",
+              "8",
+              "6",
+              "12",
+              "11",
+              "18",
+              "17"
+            ],
+            [
+              "Minimal required expected annual yield (km^3)",
+              "Minimal required expected annual yield (km^3)",
+              "22.5",
+              "9",
+              "4.8",
+              "3.5",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 14,
+      "modelId": "model-14",
+      "title": "Model 14: Farm Planning",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m14.html",
+      "problemText": [
+        "A farmer can lease land up to maximum of 1000 acres. He has to pay $5 per acre per year if he leases up to 600 acres. Beyond 600 acres, he can lease at $8 per acre per year. He grows corn on the land. He can grow corn at the normal level or at an intense level (more fertilizer, frequent irrigation, etc.) Normal level yields 70 bushels per acre. Intense level yields 100 bushels per acre. The cultivation requirements are given in the table at the bottom. Harvesting requires 0.5 man-hours of labor per bushel harvested. The farmer can sell corn at the rate of $2.50 per bushel in the wholesale market. He can also raise poultry. Poultry is measured in poultry units. To raise one poultry unit requires 25 bushels of corn, 20 man-hours of labor, and 25 ft^2 of shed floor space. He can either use the corn that he has grown himself or buy corn from the retail market. He gets corn at the rate of $3.50 per unit. He can sell at the price of \\$175 per poultry unit in the wholesale market up to 200 units. Any amount of poultry over 200 units sells for \\$160 per unit. He has only one shed for raising poultry with 15,000 ft^2 of floor space. He and his family can contribute 4000 man-hours of labor per year at no cost. if he needs more labor, he can hire it at $3 per man-hour up to 3000 man-hours. For any amount of labor hired over 3000 man-hours, he has to pay $6 per man-hour. Formulate an LP to maximize his net profit."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Requirements per Acre per Year",
+            "Normal Level",
+            "Intense Level"
+          ],
+          "rows": [
+            [
+              "Labor (man-hours)",
+              "6",
+              "9"
+            ],
+            [
+              "Materials (seed, fertilizer, water, etc.)",
+              "$20",
+              "$35"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 15,
+      "modelId": "model-15",
+      "title": "Model 15: Production Scheduling over Time",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m15r.html",
+      "problemText": [
+        "A company has a permit to operate for five seasons. It can manufacture only during the first four seasons and in the fifth period it is only allowed to sell any leftover products. It can manufacture two types of products. One unit of product 1 requires five man-hours in preparatory shop and three man-hours in finishing shop. Each unit of product 2 requires six man-hours in preparatory shop and one man-hour in finishing shop. During each season the company has at most 12,000 man-hours in preparatory and 15,000 man-hours in the finishing shop (only during the first four seasons). The product manufactured during some season can be sold anytime from the next season onward. However, selling requires some marketing effort and it is expected that 10 and 20 minutes of premium radio marketing time (premium time occur during high volume listening hours) are required to sell 10 units of products 1 and 2 per period, respectively. Correspondingly, 25 and 40 minutes of non-premium radio marketing minutes are required to sell 10 units of products 1 and 2 per period, respectively. The costs of both premimum and non-premium radio marketing minutes are given in the table below. If a unit of product is available for sale during a season, but is not sold in that season, the manufacturer has to pay carryover charges of $10 per unit to put it up for sale again in the next season. The selling prices in the various seasons are given in the table below. How should the company operate in order to maximize the total profit?"
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Season",
+            "Cost per Non-Premium Radio Minute",
+            "Cost per Premium Radio Minute",
+            "Maximum Normal Radio Minutes",
+            "Maximum Premium Radio Minutes",
+            "Expected Profit per Unit of — Product I",
+            "Expected Profit per Unit of — Product 2"
+          ],
+          "rows": [
+            [
+              "2",
+              "$20",
+              "$80",
+              "1000",
+              "200",
+              "$200",
+              "$450"
+            ],
+            [
+              "3",
+              "$40",
+              "$100",
+              "800",
+              "400",
+              "$250",
+              "$400"
+            ],
+            [
+              "4",
+              "$10",
+              "$55",
+              "1000",
+              "200",
+              "$300",
+              "$400"
+            ],
+            [
+              "5",
+              "$25",
+              "$75",
+              "900",
+              "300",
+              "$150",
+              "$300"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 16,
+      "modelId": "model-16",
+      "title": "Model 16: Production Planning",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m16.html",
+      "problemText": [
+        "A certain corporation has three branch plants with excess production capacity. All three plants have the capability for producing a certain product, and management has decided to use some of the excess production capacity in this way. This product can be made in three sizes -- large, medium, and small -- that yield a net unit profit of $385, $330, and $275, respectively. Plants 1, 2, and 3 have the excess labor and equipment capacity to produce 750, 900, and 450 units per day of this product, respectively, regardless of the size or combinations of sizes involved. However the amount of available in-process storage space also imposes a limitation on the production rates. Plants 1, 2, and 3 have 13,000, 12,000 and 5,000 square feet of in-process storage space available for a day's production of this product. Each unit of the large, medium, and small sizes produced per day requires 20, 15, and 12 square feet, respectively.",
+        "Sales forecasts indicate that 900, 1200, and 750 units of the large, medium, and small sizes, respectively, can be sold per day.",
+        "To maintain a uniform work load among the plants and to retain some flexibility, management has decided that the additional production assigned to the respective plants must use the same percentage of their excess labor and equipment capacities.",
+        "Management wishes to know how much of each of the sizes should be produced by each of the plants to maximize profit."
+      ],
+      "tables": []
+    },
+    {
+      "modelNumber": 17,
+      "modelId": "model-17",
+      "title": "Model 17: Farm Fertilizer Problem",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m17.html",
+      "problemText": [
+        "A farmer has to purchase the following quantities of fertilizer from four different shops, subject to the following capacities and prices. How can he fulfill his requirements at minimal cost?"
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Fertilizer Type",
+            "Minimum Required (tons)"
+          ],
+          "rows": [
+            [
+              "1",
+              "185"
+            ],
+            [
+              "2",
+              "50"
+            ],
+            [
+              "3",
+              "50"
+            ],
+            [
+              "4",
+              "200"
+            ],
+            [
+              "5",
+              "185"
+            ]
+          ]
+        },
+        {
+          "caption": "",
+          "headers": [
+            "Shop Number",
+            "Maximum (all types combined) They Can Supply"
+          ],
+          "rows": [
+            [
+              "1",
+              "350 tons"
+            ],
+            [
+              "2",
+              "225"
+            ],
+            [
+              "3",
+              "195"
+            ],
+            [
+              "4",
+              "275"
+            ]
+          ]
+        },
+        {
+          "caption": "",
+          "headers": [
+            "At Shop",
+            "Price in Money Units per Ton of Fertilizer Type — 1",
+            "Price in Money Units per Ton of Fertilizer Type — 2",
+            "Price in Money Units per Ton of Fertilizer Type — 3",
+            "Price in Money Units per Ton of Fertilizer Type — 4",
+            "Price in Money Units per Ton of Fertilizer Type — 5"
+          ],
+          "rows": [
+            [
+              "1",
+              "45.0",
+              "13.9",
+              "29.9",
+              "31.9",
+              "9.9"
+            ],
+            [
+              "2",
+              "42.5",
+              "17.8",
+              "31.0",
+              "35.0",
+              "12.3"
+            ],
+            [
+              "3",
+              "47.5",
+              "19.9",
+              "24.0",
+              "32.5",
+              "12.4"
+            ],
+            [
+              "4",
+              "41.3",
+              "12.5",
+              "31.2",
+              "29.8",
+              "11.0"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 18,
+      "modelId": "model-18",
+      "title": "Model 18: Family Farm II",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m18.html",
+      "problemText": [
+        "A farm family owns 125 acres of land and has $40,000 in funds available for investment. Its members can produce a total of 3,500 person-hours worth of labor during the winter months (mid-October to mid-May) and 4,000 person-hours during the summer. If any of these person-hours are not needed, younger members of the family will use them to work on a neighborhood farm for $5.00/hour, during the winter months and $6.00/hour during the summer.",
+        "Cash income may be obtained from three crops and two types of livestock: dairy cows and laying hens. No investment funds are needed for the crops. However, each cow will require an investment outlay of $1,200, and each hen will cost $9. These outlays should be considered as a one time capital investment and should not be included in computing the annual profitability of the farm.",
+        "Each cow will require 1.5 acres of land, 100 person-hours of work from November to April, and 50 person-hours from May to October. Each cow will produce a net annual cash income of $1,000 for the family. The corresponding figures for each hen are: no acreage, 0.6 person-hours from November to April, 0.3 person-hours from May to October, and an annual net cash income of $5. The chicken house can accommodate a maximum of 3,000 hens, and the size of the barn limits the herd to a maximum of 32 cows.",
+        "Estimated person-hours and income per acre planted in each of the three crops are",
+        "The family wishes to determine how much acreage should be planted in each of the crops and how many cows and hens should be kept to maximize its net cash income. Formulate the linear programming model for this problem."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "",
+            "Soybeans",
+            "Corn",
+            "Oats"
+          ],
+          "rows": [
+            [
+              "Winter person-hours",
+              "20",
+              "35",
+              "10"
+            ],
+            [
+              "Summer person-hours",
+              "50",
+              "75",
+              "40"
+            ],
+            [
+              "Net annual cash income ($)",
+              "500",
+              "750",
+              "350"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 19,
+      "modelId": "model-19",
+      "title": "Model 19: Personnel Scheduling",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m19.html",
+      "problemText": [
+        "At the beginning of the fall semester, the director of the computer facility of a certain university is confronted with the problem of assigning different working hours to his operators. Because all the operators are currently enrolled in the university, his main concern is to make certain that the operators' working times are not so excessive that they would interfere with study times.",
+        "There are six operators (four men and two women). They all have different wage rates because of differences in their experience with computers and in their programming ability. The following table shows their wage rates, along with the maximum number of hours each can work each day.",
+        "Because of a tight budget, the director has to minimize cost. His decision is that the operators with the highest wage rates should work the least possible number of hours, except this number should not be as low as to impair his or her knowledge of the operation. This level is set arbitrarily at 8 hours per week for the male operators and 7 hours per week for the female operators (K.S., N.K.).",
+        "The computer facility is to be open for operation from 8 a.m. to 10 p.m. Monday through Friday with exactly one operator on duty during these hours. On Saturdays and Sundays, the computer is to be operated by other staff.",
+        "Formulate a linear programming model so the director can determine the number of hours he should assign to each operator on each day."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Operator",
+            "Wage rate",
+            "Maximum hours of availability — Mon.",
+            "Maximum hours of availability — Tue.",
+            "Maximum hours of availability — Wed.",
+            "Maximum hours of availability — Thurs.",
+            "Maximum hours of availability — Fri."
+          ],
+          "rows": [
+            [
+              "K.C.",
+              "$6.00/hour",
+              "6",
+              "0",
+              "6",
+              "0",
+              "6"
+            ],
+            [
+              "D.H.",
+              "$6.10/hour",
+              "0",
+              "6",
+              "0",
+              "6",
+              "0"
+            ],
+            [
+              "H.B.",
+              "$5.90/hour",
+              "4",
+              "8",
+              "4",
+              "0",
+              "4"
+            ],
+            [
+              "S.C.",
+              "$5.80/hour",
+              "5",
+              "5",
+              "5",
+              "0",
+              "5"
+            ],
+            [
+              "K.S.",
+              "$6.80/hour",
+              "3",
+              "0",
+              "3",
+              "8",
+              "0"
+            ],
+            [
+              "N.K.",
+              "$7.30/hour",
+              "0",
+              "0",
+              "0",
+              "6",
+              "2"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 20,
+      "modelId": "model-20",
+      "title": "Model 20: Production Capacity Adjustment",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m20.html",
+      "problemText": [
+        "A manufacturing firm has discontinued the production of a certain unprofitable product line. This act created considerable excess production capacity. Management is considering devoting this excess capacity to one or more of three products; call them products 1, 2, and 3. The available capacity on the machines that might limit output is summarized in the following table:",
+        "The number of machine hours required for each unit of the respective products is",
+        "Productivity coefficient (in machine hours per unit)",
+        "The sales department indicates that the sales potential for products 1 and 2 exceeds the maximum production rate and that the sales potential for product 3 is 20 units per week. The unit profit would be $30, $12, and $15, respectively, on products 1, 2, and 3. The objective is to determine how much of each product the firm should produce to maximize profit.",
+        "Formulate the linear programming model for this problem."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Machine type",
+            "Available time (in machine hours per week)"
+          ],
+          "rows": [
+            [
+              "Milling machine",
+              "500"
+            ],
+            [
+              "Lathe",
+              "350"
+            ],
+            [
+              "Grinder",
+              "150"
+            ]
+          ]
+        },
+        {
+          "caption": "",
+          "headers": [
+            "Machine type",
+            "Product 1",
+            "Product 2",
+            "Product 3"
+          ],
+          "rows": [
+            [
+              "Milling machine",
+              "9",
+              "3",
+              "5"
+            ],
+            [
+              "Lathe",
+              "5",
+              "4",
+              "0"
+            ],
+            [
+              "Grinder",
+              "3",
+              "0",
+              "2"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 21,
+      "modelId": "model-21",
+      "title": "Model 21: Crop Planning",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m21.html",
+      "problemText": [
+        "A farmer has three farms. He can grow three different crops on them. Data for the coming season are given in the table below. To maintain a uniform work load among the three farms, the farmer adopts the policy that the percentage of usable acreage planted must be the same at each of the three farms. However, any combination of the crops may be grown at any of the farms. The only expenses the farmer counts are for the water used at the various farms. How much acreage at each farm should be devoted to the various crops to maximize the farmer's net profit?"
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Farm",
+            "Usable Acreage",
+            "Water Available in a-ft at $25/a-ft",
+            "Cost per a-ft of Water Beyond Amounts in Previous Column"
+          ],
+          "rows": [
+            [
+              "1",
+              "400",
+              "1200",
+              "$50"
+            ],
+            [
+              "2",
+              "600",
+              "2200",
+              "$60"
+            ],
+            [
+              "3",
+              "450",
+              "1100",
+              "$70"
+            ]
+          ]
+        },
+        {
+          "caption": "",
+          "headers": [
+            "Crop",
+            "Maximum Acreage Farmer Can Plant",
+            "Water Consumption (a-ft/a)",
+            "Yield units/a",
+            "Selling Price per Unit"
+          ],
+          "rows": [
+            [
+              "A",
+              "500",
+              "6",
+              "50",
+              "$25/unit up to 10,000 units $20/unit beyond 10,000 units"
+            ],
+            [
+              "B",
+              "700",
+              "5",
+              "100",
+              "$15/unit up to 40,000 units $8/unit beyond 40,000 units"
+            ],
+            [
+              "C",
+              "350",
+              "4",
+              "75",
+              "$45/unit up to 20,000 units $42/unit beyond 20,000 units"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 22,
+      "modelId": "model-22",
+      "title": "Model 22: Lumber Company",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m22.html",
+      "problemText": [
+        "A lumber company has three sources of wood and five markets to be supplied. The annual availability of wood at sources 1, 2, and 3 are 10, 20, and 15 million board feet, respectively. The amount that can be sold annually at markets 1, 12, 3, 4, and 5 are 7, 11, 9, 10, and 8 million board feet, respectively.",
+        "In the past the company has shipped the wood by train. However, because shipping costs have been increasing, the alternative of using ships to make some of the deliveries is being investigated. This alternative would require the company to invest in some ships. Except for these investment costs, the shipping costs in thousands of dollars per million board feet by rail and by water (when feasible) would be the following for each route:",
+        "The capital investment (in thousands of dollars) in ships required for each million board feet to be transported annually by ship along each route is given as follows:",
+        "Considering the expected useful life of the ships and the time value of money, the equivalent uniform annual cost of these investments is one-tenth the amount given in the table. The company is able to raise only $6,750,000 to invest in ships. The object is to determine the overall shipping plan that minimizes the total equivalent uniform annual cost while meeting this investment budget and the sales demand at the markets. Formulate the linear programming model for this problem."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Source",
+            "Unit cost by rail Market — 1",
+            "Unit cost by rail Market — 2",
+            "Unit cost by rail Market — 3",
+            "Unit cost by rail Market — 4",
+            "Unit cost by rail Market — 5",
+            "Unit cost by ship Market — 1",
+            "Unit cost by ship Market — 2",
+            "Unit cost by ship Market — 3",
+            "Unit cost by ship Market — 4",
+            "Unit cost by ship Market — 5"
+          ],
+          "rows": [
+            [
+              "1",
+              "61",
+              "72",
+              "45",
+              "55",
+              "66",
+              "31",
+              "38",
+              "24",
+              "-",
+              "35"
+            ],
+            [
+              "2",
+              "69",
+              "78",
+              "60",
+              "49",
+              "56",
+              "36",
+              "43",
+              "28",
+              "24",
+              "31"
+            ],
+            [
+              "3",
+              "59",
+              "66",
+              "63",
+              "61",
+              "47",
+              "-",
+              "33",
+              "36",
+              "32",
+              "26"
+            ]
+          ]
+        },
+        {
+          "caption": "",
+          "headers": [
+            "Source",
+            "Investment for ships Market — 1",
+            "Investment for ships Market — 2",
+            "Investment for ships Market — 3",
+            "Investment for ships Market — 4",
+            "Investment for ships Market — 5"
+          ],
+          "rows": [
+            [
+              "1",
+              "275",
+              "303",
+              "238",
+              "-",
+              "285"
+            ],
+            [
+              "2",
+              "293",
+              "318",
+              "270",
+              "250",
+              "265"
+            ],
+            [
+              "3",
+              "-",
+              "283",
+              "275",
+              "268",
+              "240"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 23,
+      "modelId": "model-23",
+      "title": "Model 23: Diet Problem",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m23.html",
+      "problemText": [
+        "There are 14 food ingredients available. They can be classified into seven groups. it is required to mix them into a minimum cost diet satisfying the following constraints: (i) Protein content should be at least 20%; (ii) fat content should be at least 3%; (iii) fiber content should be at most 12%; (iv) Ca content should be between 1% and 2%; (v) Ph content should be between 0.6% and 2%; (vi) Ca content should be greater than or equal to the Ph content. Data and other constraints are given below."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Group",
+            "",
+            "Food Ingredient",
+            "Percent of Nutrient Content — Protein",
+            "Percent of Nutrient Content — Fat",
+            "Percent of Nutrient Content — Fiber",
+            "Percent of Nutrient Content — Ca",
+            "Percent of Nutrient Content — Ph",
+            "Cost per Ton",
+            "Range of Ingredient (%)",
+            "Range of Group (%)"
+          ],
+          "rows": [
+            [
+              "1",
+              "1",
+              "Dried beet pulp",
+              "9",
+              "0.5",
+              "20",
+              "0.7",
+              "0.05",
+              "64",
+              "4 to 20",
+              "5 to 20"
+            ],
+            [
+              "",
+              "2",
+              "Dried citrus pulp",
+              "6",
+              "3",
+              "16",
+              "2",
+              "0.1",
+              "35",
+              "1 to 20",
+              ""
+            ],
+            [
+              "2",
+              "3",
+              "Ground yellow corn",
+              "8.5",
+              "4",
+              "2.5",
+              "0.02",
+              "0.25",
+              "55",
+              "1 to 25",
+              "20 to 35"
+            ],
+            [
+              "",
+              "4",
+              "Ground oats",
+              "12",
+              "4.5",
+              "12",
+              "0.1",
+              "0.4",
+              "54",
+              "1 to 25",
+              ""
+            ],
+            [
+              "3",
+              "5",
+              "Corn molasses",
+              "3.5",
+              "",
+              "",
+              "0.6",
+              "0.1",
+              "19",
+              "5 to 14",
+              "5 to 14"
+            ],
+            [
+              "4",
+              "6",
+              "Wheat middlings",
+              "16",
+              "4",
+              "8",
+              "0.1",
+              "0.9",
+              "64",
+              "5 to 30",
+              "10 to 30"
+            ],
+            [
+              "",
+              "7",
+              "Wheat bran",
+              "16",
+              "4",
+              "10.5",
+              "0.1",
+              "1.2",
+              "62",
+              "5 to 30",
+              ""
+            ],
+            [
+              "5",
+              "8",
+              "Distiller grains",
+              "26",
+              "8.5",
+              "9",
+              "0.15",
+              "0.6",
+              "77",
+              "5 to 15",
+              "2 to 25"
+            ],
+            [
+              "",
+              "9",
+              "Corn gluten feed",
+              "24",
+              "2",
+              "8",
+              "0.3",
+              "0.65",
+              "66",
+              "1 to 25",
+              ""
+            ],
+            [
+              "6",
+              "10",
+              "Cottonseed meal",
+              "41",
+              "1.5",
+              "13",
+              "0.1",
+              "1.2",
+              "74",
+              "1 to 35",
+              "3 to 35"
+            ],
+            [
+              "",
+              "11",
+              "Linseed oil meal",
+              "34",
+              "1",
+              "8",
+              "0.35",
+              "0.8",
+              "85",
+              "1 to 35",
+              ""
+            ],
+            [
+              "",
+              "12",
+              "Soybean oil meal",
+              "45",
+              "0.5",
+              "6.5",
+              "0.2",
+              "0.6",
+              "108",
+              "1 to 35",
+              ""
+            ],
+            [
+              "7",
+              "13",
+              "Ground limestone",
+              "",
+              "",
+              "",
+              "36",
+              "0.5",
+              "10",
+              "0 to 2",
+              ""
+            ],
+            [
+              "",
+              "14",
+              "Ground phosphate",
+              "",
+              "",
+              "",
+              "32",
+              "14",
+              "66",
+              "1 to 2",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 24,
+      "modelId": "model-24",
+      "title": "Model 24: Busing Problem",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m24.html",
+      "problemText": [
+        "Recent federal regulations strongly encourage the assignment of students to schools in a city so that the racial composition of any school approximates the racial composition of the entire city. Consider the case of the Greenville city schools. The city can be considered as composed of five areas with the following characteristics:",
+        "The ruling handed down for Greenville is that a school can have neither more than 75 percent nor less than 30 percent minority enrollment. There are three schools in Greenville with the following capacities:",
+        "The objective is to design an assignment of students to schools so as to stay within the capacity of each school and satisfy the composition constraints while minimizing the distance traveled by students. The distances in kilometers between areas and schools are:",
+        "There is an additional condition that no student can be transported more than 2.6 kilometers. Find the number of students which should be assigned to each school from each area. Assume that any group of students from an area have the same ethnic mix as the whole area."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Area",
+            "Fraction Minority",
+            "Number of Students"
+          ],
+          "rows": [
+            [
+              "1",
+              ".20",
+              "1,200"
+            ],
+            [
+              "2",
+              ".10",
+              "900"
+            ],
+            [
+              "3",
+              ".85",
+              "1,700"
+            ],
+            [
+              "4",
+              ".60",
+              "2,000"
+            ],
+            [
+              "5",
+              ".90",
+              "2,500"
+            ]
+          ]
+        },
+        {
+          "caption": "",
+          "headers": [
+            "School",
+            "Capacity"
+          ],
+          "rows": [
+            [
+              "Bond",
+              "3,900"
+            ],
+            [
+              "Washington",
+              "3,100"
+            ],
+            [
+              "Pierron",
+              "2,100"
+            ]
+          ]
+        },
+        {
+          "caption": "",
+          "headers": [
+            "School",
+            "Area — 1",
+            "Area — 2",
+            "Area — 3",
+            "Area — 4",
+            "Area — 5"
+          ],
+          "rows": [
+            [
+              "Bond",
+              "2.7",
+              "1.4",
+              "2.4",
+              "1.1",
+              "0.5"
+            ],
+            [
+              "Washington",
+              "0.5",
+              "0.7",
+              "2.9",
+              "0.8",
+              "1.9"
+            ],
+            [
+              "Pierron",
+              "1.6",
+              "2.0",
+              "0.1",
+              "1.3",
+              "2.2"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 25,
+      "modelId": "model-25",
+      "title": "Model 25: Seasonal Production Planning",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m25.html",
+      "problemText": [
+        "The principal products of the Linear Products (LP) Company are two chemical compounds, Amide and Nitrile. The demand for both products is seasonal. For planning purposes the company is using the following figures for demand per quarter for the next several years.",
+        "Essentially, there are three basic strategies for satisfying this fluctuating demand:",
+        "1. Produce at a steady rate and use inventories to absorb the fluctuations.",
+        "2. Vary overtime to match the demand fluctuations while carrying no inventory.",
+        "3. Vary the capacity while carrying no inventory and incurring no overtime. The best strategy is probably a mix of these.",
+        "Inventory, storage, and carrying costs can be well approximated by assessing a cost of $8 per 1000 gallons of Amide on hand at the end of each quarter and $7 per 1000 gallons of Nitrile on hand at the end of each quarter.",
+        "Each product must be processed in each of the company's two principal departments, Preparation and Finishing. Each 1000 gallons of Amide requires one hour of processing in each of Preparation and Finishing. Each 1000 units of Nitrile requires one hour in Preparation but 1.5 hours in Finishing.",
+        "Regular time costs $3 per hour and $2.50 per hour in Preparation and Finishing, respectively. Overtime costs in the two departments are $4.50 per hour and $3.50 per hour. Regular time is in this sense always preferable to overtime because it costs less; however, changing the amount of regular time from one period to the next is undesirable because it involves such things as hiring and laying off people. The company feels that it costs $5 for each change (up or down) of one hour in the regular time used per period (quarter) in the Preparation Department. The analogous cost in the Finishing Department is $6. Thus, for example, if the regular time used in the Preparation Department is 120 one period and 40 the next period, a cost of $400 is incurred simply because of changing the capacity in the Preparation Department. It is the company's experience that the overtime in any particular period cannot exceed 50 per cent of the regular time.",
+        "The question now is: \"What should be the planned levels of regular time, overtime, and inventories for each period?\" Treat the problem as a cyclic one, that is, the ending inventories in the Winter Quarter are the entering inventories in the Spring Quarter, we will have to pay for any changes in levels from the Winter Quarter."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Demand in 1000 Gallons",
+            "Demand in 1000 Gallons — Amide",
+            "Demand in 1000 Gallons — Nitrile"
+          ],
+          "rows": [
+            [
+              "Spring",
+              "20",
+              "20"
+            ],
+            [
+              "Summer",
+              "30",
+              "50"
+            ],
+            [
+              "Autumn",
+              "50",
+              "30"
+            ],
+            [
+              "Winter",
+              "60",
+              "60"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 26,
+      "modelId": "model-26",
+      "title": "Model 26: Investment Planning",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m26.html",
+      "problemText": [
+        "Winston-Salem Development Management (WSDM) is trying to complete is investment plans for the next three years. Currently, WSDM has 2 million dollars available for investment. At six month intervals over the next three years, WSDM expects the following income stream from previous investments: $500,000 (6 months from now), $400,000; $380,000; $360,000; $340,000; and $300,000 (at the end of third year). There are three development projects in which WSDM is considering participating. The Foster City Development would, if WSDM participated fully, have the following cash flow stream (projected) at six month intervals over the next three years (negative numbers represent investments, positive numbers represent income): -$3,000,000; -$1,000,000; -$1,800,000; $400,000; $1,800,000; $1,800,000; $5,500,000. The last figure is its estimated value at the end of three years. A second project involves taking over the operation of some old lower-middle income housing on the condition that certain initial repairs to it be made and that it be demolished at the end of three years. The cash flow stream for this project if participated in fully would be: -$2,000,000; -$500,000; $1,500,000; $1,500,000; $1,500,000; $200,000; -$1,000,000.",
+        "The third project, The Disney-Universe Hotel, would have the following cash flow stream (six-month intervals) if WSDM participated fully. Again the last figure is the estimated value at the end of the three yeras: -$2,000,000; -$2,000,000; -$1,800,000; $1,000,000; $1,000,000; $1,000,000; $6,000,000. WSDM can borrow money for half-year intervals at 3.5 percent interest per half year. At most, 2 million dollars can be borrowed at one time, i.e., the total outstanding principal can never exceed 2 million. WSDM can invest surplus funds at 3 percent per half-year.",
+        "Formulate the problem of maximizing WSDM's net worth at the end of three years as a linear program. If WSDM participates in a project at less than 100 percent, all the cash flows of that project are reduced appropriately."
+      ],
+      "tables": []
+    },
+    {
+      "modelNumber": 27,
+      "modelId": "model-27",
+      "title": "Model 27: Hydrological Model",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m27.html",
+      "problemText": [
+        "In constructing a hydrological model using the data in the table given at the bottom, it is required to obtain the expected runoff, denoted by R_i during the i-th period, as a linear function of the observed precipitation. From hydrological considerations the expected runoff depends on the precipitation during that period and the previous two periods. So the model for expected runoff is R_i=b_0p_i+b_1p_i-1+b_2p_i-2, where p_i equals precipitation during the i -th period; and b-), b_1, b_2 are the coefficients that are required to be estimated. These coefficients have to satisfy the following constraints from hydrological considerations: b_0+b_1+b_2=1, where b_0&gt b_1&gt b_2&gt 0. Obtain the best estimates for b_0, b_1, b_2, if the objectives are",
+        "1. to minimize the sum of absolute deviations sum_i|R_i-b_0p_i-b_1 p_i-1-b_2p_i-2|; and",
+        "2. to minimize the maximum absolute deviation max_i|R_i-b_0p_1-b_1 p_i-1-b_2p_i_2|."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [],
+          "rows": [
+            [
+              "Period",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12"
+            ],
+            [
+              "Precipitation (inch hours)",
+              "3.8",
+              "4.4",
+              "5.7",
+              "5.2",
+              "7.7",
+              "6.0",
+              "5.4",
+              "5.7",
+              "5.5",
+              "2.5",
+              "0.8",
+              "0.4"
+            ],
+            [
+              "Runoff (acre feet)",
+              "0.05",
+              "0.35",
+              "1.0",
+              "2.1",
+              "3.7",
+              "4.2",
+              "4.3",
+              "4.4",
+              "4.3",
+              "4.2",
+              "3.6",
+              "2.7"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 28,
+      "modelId": "model-28",
+      "title": "Model 28: Production Planning",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m28.html",
+      "problemText": [
+        "A company manufactures a product, the demand for which varies from month to month. The raw material and labor availability exhibit seasonal variations. During the months 10, 11, 12, 1, 2, 3 the company can hire at most enough labor to produce 1200 and 600 tons per month during regular time and overtime, respectively. In months 4, 5, 6, 7, 8, 9 these labor capacities are 800 and 500 tons, respectively. The product manufactured during a month can be sold anytime during the next month or later. Storage costs are $1.00/ton from one month to the next for the product. Raw material cannot be stored. It has to be used up in the month in which it is obtained. Operations begin in month 1 with a stock of 50 tons of the product. At the end of month 12 the company should have a stock of at least 50 tons of the product. Determine an optimum production schedule."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Month",
+            "Cost of Labor ($/Ton of Production) During — Regular Time",
+            "Cost of Labor ($/Ton of Production) During — Overtime",
+            "Limit on Raw Material Availability (enough to make tons of product)",
+            "Demand (tons)",
+            "Selling price ($/ton)"
+          ],
+          "rows": [
+            [
+              "1",
+              "$4 during these months",
+              "$6",
+              "600",
+              "400",
+              "18"
+            ],
+            [
+              "2",
+              "$4 during these months",
+              "$6",
+              "450",
+              "700",
+              "18"
+            ],
+            [
+              "3",
+              "$4 during these months",
+              "$6",
+              "425",
+              "600",
+              "18"
+            ],
+            [
+              "4",
+              "$6 during these months",
+              "$9",
+              "1200",
+              "900",
+              "25"
+            ],
+            [
+              "5",
+              "$6 during these months",
+              "$9",
+              "1300",
+              "900",
+              "25"
+            ],
+            [
+              "6",
+              "$6 during these months",
+              "$9",
+              "1600",
+              "900",
+              "25"
+            ],
+            [
+              "7",
+              "$6 during these months",
+              "$9",
+              "1600",
+              "800",
+              "25"
+            ],
+            [
+              "8",
+              "$6 during these months",
+              "$9",
+              "1500",
+              "600",
+              "25"
+            ],
+            [
+              "9",
+              "$6 during these months",
+              "$9",
+              "1300",
+              "800",
+              "25"
+            ],
+            [
+              "10",
+              "$4",
+              "$6",
+              "500",
+              "1200",
+              "30"
+            ],
+            [
+              "11",
+              "$4",
+              "$6",
+              "500",
+              "1100",
+              "30"
+            ],
+            [
+              "12",
+              "$4",
+              "$6",
+              "500",
+              "1400",
+              "30"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "modelNumber": 29,
+      "modelId": "model-29",
+      "title": "Model 29: Post Office Problem",
+      "sourceUrl": "https://sites.math.washington.edu/~burke/crs/407/models/m29.html",
+      "problemText": [
+        "Postal Optimality Analysis (Due to Gene Moore).",
+        "As part of a modernization effort U.S. Postal Service decided to upgrade, streamline and make more efficient the process of handling and distributing bulk mail (second, third and fourth class nonpreferential) in the Chicago area. As part of this goal a new processing facility was proposed for the Chicago area. One part of this proposal was development of a low cost operational plan for the manning of this facility once completed. The plan would recognize the widely fluctuating hourly volume that is characteristic of such a facility and would suggest a staffing pattern or patterns that would accomplish the dual objective of receiving, unpacking, weighing, sorting by destination, and shipping of mail designated as nonpreferential, including second class (bulk rate), third class (parcel post), and fourth class (books). It is most frequently designed as a single purpose structure and is most typically located in or adjacent to the large metropolitan areas which, in large measure, produce this type of mail in significant volume. Although the trend in designing such facilities in the recent past has been in the direction of increased utilization of automated equipment (including highly sophisticated handling and sorting devices), paid manpower continues to account for a substantial portion of total operating expense. Mail is received by the facility in mail bags and in containers, both of which are shipped in trucks. It is also received in tied and wrapped packages, which are sent directly to the facility on railroad flatcars. Receipts of mail by the facility tend to be cyclical on a predictable basis, throughout the 24 hour working day, resulting in the episodic build-up of an ``inventory'' of mail from one hour to the next, which inventory must be processed at a given level of staffing and machine capacity. A policy decision to have ``no idle time'' imposes a constraint on the optimal level of staffing. Once the facility is ready for operations, it will be necessary to implement an operating plan which will include staffing requirements. A number of assumptions regarding such a plan are necessary at the outset. Some of them are based upon existing Postal Service policy while others evolve from functional constraints. These assumptions are as follows.",
+        "1. Pieces of mail are homogeneous in terms of processing effort.",
+        "2. Each employee can process 1800 pieces per hour.",
+        "3. Only full shifts are worked, i.e., it is impossible to introduce additional labor inputs or reduce existing labor inputs at times other than shift changes.",
+        "4. Shift changes occur at midnight, 8:00 AM and 4:00 PM, which are the first, second and third shifts, respectively.",
+        "5. All mail arrivals occur on the hour.",
+        "6. All mail must be processed the same day it is received, i.e., there may not be any \"inventory\" carryover from the third shift to the following day's first shift.",
+        "7. Labor rates, including shift differential, are given in the following table:",
+        "8. Hourly mail arrival is predictable and is given in the following table.",
+        "Formulate and solve the LP that determines the most cost effective hourly staff."
+      ],
+      "tables": [
+        {
+          "caption": "",
+          "headers": [
+            "Shift",
+            "$/hr.",
+            "Daily Rate"
+          ],
+          "rows": [
+            [
+              "1st (Midnight-8 AM)",
+              "3.90",
+              "31.20"
+            ],
+            [
+              "2nd (8 AM-4 PM)",
+              "3.60",
+              "28.80"
+            ],
+            [
+              "3rd (4 PM-Midnight)",
+              "3.80",
+              "30.40"
+            ]
+          ]
+        },
+        {
+          "caption": "",
+          "headers": [
+            "Cumulative Mail Arrival — 1st Shift — Hr.",
+            "Cumulative Mail Arrival — 1st Shift — Pieces",
+            "Cumulative Mail Arrival — 2nd Shift — Hr.",
+            "Cumulative Mail Arrival — 2nd Shift — Pieces",
+            "Cumulative Mail Arrival — 3rd Shift — Hr.",
+            "Cumulative Mail Arrival — 3rd Shift — Pieces",
+            "Cumulative Mail Arrival",
+            "Cumulative Mail Arrival"
+          ],
+          "rows": [
+            [
+              "0100",
+              "56,350",
+              "0900",
+              "242,550",
+              "1700",
+              "578,100",
+              "",
+              ""
+            ],
+            [
+              "0200",
+              "83,300",
+              "1000",
+              "245,000",
+              "1800",
+              "592,800",
+              "",
+              ""
+            ],
+            [
+              "0300",
+              "147,000",
+              "1100",
+              "249,900",
+              "1900",
+              "597,700",
+              "",
+              ""
+            ],
+            [
+              "0400",
+              "171,500",
+              "1200",
+              "259,700",
+              "2000",
+              "901,500",
+              "",
+              ""
+            ],
+            [
+              "0500",
+              "188,650",
+              "1300",
+              "323,400",
+              "2100",
+              "908,850",
+              "",
+              ""
+            ],
+            [
+              "0600",
+              "193,550",
+              "1400",
+              "369,950",
+              "2200",
+              "928,450",
+              "",
+              ""
+            ],
+            [
+              "0700",
+              "210,700",
+              "1500",
+              "421,400",
+              "2300",
+              "950,500",
+              "",
+              ""
+            ],
+            [
+              "0800",
+              "220,500",
+              "1600",
+              "485,100",
+              "2400",
+              "974,000",
+              "",
+              ""
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

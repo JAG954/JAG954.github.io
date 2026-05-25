@@ -1,0 +1,228 @@
+.optimization-workbench {
+  background: var(--paper);
+}
+
+.workbench-status {
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--soft);
+  padding: 1.25rem;
+}
+
+.workbench-status span,
+.workbench-status small {
+  display: block;
+  color: var(--muted);
+}
+
+.workbench-status strong {
+  display: block;
+  color: var(--deep);
+  font-size: 1.35rem;
+  margin: 0.15rem 0;
+}
+
+.workbench-status-live {
+  border-left: 4px solid #1f7a4d;
+}
+
+.workbench-status-demo {
+  border-left: 4px solid var(--accent);
+}
+
+.workbench-status-unavailable {
+  border-left: 4px solid #b54708;
+}
+
+.workbench-example-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.workbench-example {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 0.85rem 1rem;
+  text-align: left;
+}
+
+.workbench-example:hover,
+.workbench-example:focus {
+  border-color: var(--accent);
+}
+
+.workbench-example:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.workbench-example span {
+  display: block;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.workbench-example strong {
+  display: block;
+  color: var(--ink);
+}
+
+.workbench-prompt {
+  min-height: 11rem;
+}
+
+.formulation-card {
+  box-shadow: 0 0.35rem 1.5rem rgba(31, 35, 40, 0.04);
+}
+
+.workbench-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.workbench-stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.latex-block,
+.latex-compare,
+.matrix-preview {
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--soft);
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.latex-block {
+  display: grid;
+  min-height: 7rem;
+  place-items: center;
+}
+
+.constraint-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.matrix-preview {
+  background: var(--paper);
+  margin-top: 0.75rem;
+}
+
+.derivation-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.derivation-step {
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+}
+
+.derivation-step > span,
+.latex-compare span {
+  color: var(--accent);
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+
+.json-view {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  color: var(--ink);
+  max-height: 32rem;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.export-toggle {
+  flex-wrap: wrap;
+}
+
+.solver-action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.solver-result-panel {
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--paper);
+  padding: 1rem;
+}
+
+.solver-result-error {
+  border-left: 4px solid #b42318;
+}
+
+.solver-result-pending {
+  border-left: 4px solid #b54708;
+  background: var(--soft);
+}
+
+.solver-status {
+  align-self: flex-start;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--deep);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  text-transform: uppercase;
+}
+
+.solver-status-optimal {
+  border-color: #1f7a4d;
+  color: #1f7a4d;
+}
+
+.solver-status-error,
+.solver-status-infeasible,
+.solver-status-unbounded {
+  border-color: #b42318;
+  color: #b42318;
+}
+
+.solver-status-pending,
+.solver-status-iteration_limit {
+  border-color: #b54708;
+  color: #b54708;
+}
+
+.katex-display {
+  margin: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+@media (max-width: 575.98px) {
+  .workbench-tabs {
+    display: grid;
+  }
+
+  .workbench-tabs .btn {
+    width: 100%;
+  }
+
+  .solver-action-buttons {
+    display: grid;
+  }
+
+  .solver-action-buttons .btn {
+    width: 100%;
+  }
+}

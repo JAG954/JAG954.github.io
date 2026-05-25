@@ -1,0 +1,83 @@
+.model-problem-section .lead {
+  max-width: 60ch;
+}
+
+.source-attribution {
+  background: var(--paper);
+  border-color: var(--line);
+  border-left: 4px solid var(--accent);
+}
+
+.source-attribution a {
+  color: var(--deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-all;
+}
+
+.model-problem-card {
+  box-shadow: 0 0.35rem 1.5rem rgba(31, 35, 40, 0.04);
+}
+
+.model-problem-card header h2 {
+  color: var(--ink);
+}
+
+.model-source {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.model-source a {
+  color: var(--deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  word-break: break-all;
+}
+
+.model-problem-card h3 {
+  color: var(--deep);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+}
+
+.model-paragraph {
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.model-table-figure {
+  margin: 0 0 1.75rem 0;
+}
+
+.model-table-caption {
+  font-weight: 700;
+  color: var(--deep);
+  margin-bottom: 0.5rem;
+}
+
+.model-data-table {
+  background: var(--paper);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.model-data-table thead {
+  background: var(--soft);
+}
+
+.model-data-table th,
+.model-data-table td {
+  border-color: var(--line) !important;
+  vertical-align: middle;
+}
+
+.model-data-table th {
+  color: var(--deep);
+  font-weight: 700;
+}
+
+.model-data-table tbody tr:nth-child(even) td {
+  background: rgba(245, 247, 242, 0.55);
+}
