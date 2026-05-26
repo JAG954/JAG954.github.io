@@ -1,0 +1,54 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Stage publishable site
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          # Root portfolio
+          cp index.html _site/
+          cp style.css _site/
+          cp README.md _site/ || true
+          cp LICENSE _site/ || true
+          [ -f CNAME ] && cp CNAME _site/
+          # Static asset directories used by the root portfolio
+          cp -R assets _site/
+          [ -d capabilities ] && cp -R capabilities _site/ || true
+          [ -d timeline ] && cp -R timeline _site/ || true
+          # Built optimization workbench subpage
+          cp -R optimization _site/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
