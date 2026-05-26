@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-05-12",
+  "models": [
+    {
+      "id": "model_27",
+      "title": "Model 27 canonical LP benchmark",
+      "status": "complete",
+      "dataStatus": "test-data",
+      "simplex": {
+        "status": "optimal",
+        "objective": 18.3333333333,
+        "x": [0.3333333333, 0.3333333333, 0.3333333333],
+        "iterations": 8,
+        "runtimeMs": 4.2
+      },
+      "ipm": {
+        "status": "optimal",
+        "objective": 18.3333333333,
+        "x": [0.3333333333, 0.3333333333, 0.3333333333],
+        "iterations": 14,
+        "runtimeMs": 7.9
+      },
+      "gurobi": {
+        "available": true,
+        "status": "optimal",
+        "objective": 18.3333333333,
+        "matchesSimplex": true,
+        "matchesIPM": true
+      }
+    }
+  ]
+}
