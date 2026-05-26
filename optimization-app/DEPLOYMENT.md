@@ -41,7 +41,7 @@ so the frontend can degrade to the cached demo formulation.
 
 | Variable           | Purpose                                                              | Example                                |
 | ------------------ | -------------------------------------------------------------------- | -------------------------------------- |
-| `GEMINI_API_KEY`   | Server-side Gemini key. **Never put this in the client.**            | `AIza...` (rotate the previously-exposed key) |
+| `GEMINI_API_KEY`   | Server-side Gemini key. **Never put this in the client.**            | Issue a fresh production key from Google AI Studio. |
 | `GEMINI_MODEL`     | Model id to call.                                                    | `gemini-2.5-flash` or `gemini-2.5-pro`  |
 | `ALLOWED_ORIGINS`  | Comma-separated CORS allowlist.                                      | `https://jishnughosh.com,https://jag954.github.io` |
 | `MAX_PROMPT_CHARS` | Hard cap on prompt length. Match the frontend (currently 2500).       | `2500`                                  |
@@ -88,9 +88,12 @@ When you deploy the backend, either:
 
 ## Security checklist before going live
 
-- [ ] **Rotate the previously exposed Gemini API key.** Treat it as compromised.
-- [ ] Confirm `GEMINI_API_KEY` is set only as a backend secret (Render/Railway env vars), never in the repo.
-- [ ] Confirm `git grep -i "AIza"` returns no matches in the repo or `/optimization/` build artifacts.
+- [ ] **Issue a dedicated production `GEMINI_API_KEY`** from Google AI Studio
+      for the backend. Do not reuse a local development key.
+- [ ] Set `GEMINI_API_KEY` only as a backend secret (Render/Railway env vars),
+      never in the repo, the frontend bundle, or client-side config files.
+- [ ] Confirm `git grep -i "AIza"` returns no matches in the repo or
+      `/optimization/` build artifacts.
 - [ ] Confirm `ALLOWED_ORIGINS` lists only the production portfolio domains.
 - [ ] Confirm the frontend only points at the backend URL, never directly at
       `generativelanguage.googleapis.com`.

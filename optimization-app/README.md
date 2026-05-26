@@ -23,5 +23,4 @@ server side.
 
 See [DEPLOYMENT.md](./DEPLOYMENT.md) for the full backend contract, required
 environment variables (`GEMINI_API_KEY`, `GEMINI_MODEL`, `ALLOWED_ORIGINS`,
-`MAX_PROMPT_CHARS`, `PORT`), and the pre-flight security checklist (including
-the requirement to rotate any previously exposed key).
+`MAX_PROMPT_CHARS`, `PORT`), and the pre-flight security checklist.
