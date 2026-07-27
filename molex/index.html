@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A sanitized case study of Jishnu Ghosh's work centralizing and automating global ERP smoke testing and UAT during a Molex/Actalent engagement."
+    >
+    <meta name="author" content="Jishnu Ghosh">
+    <meta name="theme-color" content="#1f342f">
+    <title>Global ERP Testing Orchestration | Jishnu Ghosh</title>
+    <link rel="canonical" href="https://jishnughosh.com/molex/">
+    <meta property="og:title" content="Global ERP Testing Orchestration | Jishnu Ghosh">
+    <meta
+      property="og:description"
+      content="How a global ERP UAT workflow was centralized, automated, and made usable across four distributed teams."
+    >
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jishnughosh.com/molex/">
+    <meta property="og:image" content="https://jishnughosh.com/assets/case-study/testing-home-dashboard.png">
+    <meta property="og:image:alt" content="ERP testing dashboard screenshot">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Global ERP Testing Orchestration | Jishnu Ghosh">
+    <meta
+      name="twitter:description"
+      content="A public-safe case study on global ERP testing coordination, workflow automation, issue tracking, and dashboard design."
+    >
+    <meta name="twitter:image" content="https://jishnughosh.com/assets/case-study/testing-home-dashboard.png">
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body class="case-study-page">
+    <a class="visually-hidden-focusable skip-link" href="#case-study">Skip to case study</a>
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-lg bg-white border-bottom" aria-label="Primary navigation">
+        <div class="container">
+          <a class="navbar-brand fw-semibold" href="../">Jishnu Ghosh</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#caseStudyNavigation"
+            aria-controls="caseStudyNavigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="caseStudyNavigation">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#problems">Problems</a></li>
+              <li class="nav-item"><a class="nav-link" href="#system">System</a></li>
+              <li class="nav-item"><a class="nav-link" href="#interface">Interface</a></li>
+              <li class="nav-item"><a class="nav-link" href="#execution">Execution</a></li>
+              <li class="nav-item"><a class="nav-link" href="#outcomes">Outcomes</a></li>
+              <li class="nav-item"><a class="nav-link" href="../#resume">Resume</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="case-study">
+      <section class="case-hero section-pad">
+        <div class="container">
+          <div class="row g-5 align-items-end">
+            <div class="col-lg-8">
+              <p class="section-kicker mb-3">Professional Case Study &middot; June-July 2026</p>
+              <h1 class="display-3 fw-semibold mb-4">Global ERP Testing Orchestration</h1>
+              <p class="lead fs-4 mb-4">
+                Centralizing a distributed ERP smoke testing and UAT program into one traceable,
+                automation-supported operating system.
+              </p>
+              <p class="case-intro mb-0">
+                During a two-month contract through Actalent, I supported Molex Connected
+                Enterprise Solutions as a Junior Project Manager. My work focused on the
+                execution layer: turning thousands of test steps, dozens of scenarios, and four
+                global teams into a shared workflow that could run continuously across time zones.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <dl class="case-meta mb-0">
+                <div>
+                  <dt>Role</dt>
+                  <dd>Junior Project Manager</dd>
+                </div>
+                <div>
+                  <dt>Engagement</dt>
+                  <dd>Molex via Actalent</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Global ERP smoke testing and UAT</dd>
+                </div>
+                <div>
+                  <dt>Tools</dt>
+                  <dd>Excel, Power Query, Office Scripts, Power Automate, Outlook, Copilot</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="case-stat-grid mt-5" role="group" aria-label="Engagement scope">
+            <div>
+              <strong>4</strong>
+              <span>global teams</span>
+            </div>
+            <div>
+              <strong>3 weeks</strong>
+              <span>UAT execution window</span>
+            </div>
+            <div>
+              <strong>1000s</strong>
+              <span>of test steps</span>
+            </div>
+            <div>
+              <strong>Dozens</strong>
+              <span>of test scenarios</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="confidentiality-note border-top border-bottom">
+        <div class="container py-4">
+          <div class="row g-3 align-items-start">
+            <div class="col-lg-3">
+              <p class="section-kicker mb-0">Public-Safe Scope</p>
+            </div>
+            <div class="col-lg-9">
+              <p class="mb-0">
+                This case study is intentionally limited to my responsibilities, design approach,
+                high-level scale, and selected interface views. The screenshots omit personal data,
+                issue narratives, defect details, configurations, and proprietary business-process
+                documentation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="problems" class="section-pad">
+        <div class="container">
+          <div class="row g-4 mb-4">
+            <div class="col-lg-4">
+              <p class="section-kicker mb-2">Problem, Task, Solution</p>
+              <h2 class="h1">Four operating problems solved during ERP readiness testing.</h2>
+            </div>
+            <div class="col-lg-8">
+              <p class="fs-5 mb-0">
+                The value of the work came from connecting process design, workbook automation,
+                tester usability, and live program coordination. Each problem had a practical
+                operating task behind it, not just a reporting need.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <article class="problem-card">
+                <p class="project-label mb-2">Problem 01</p>
+                <h3 class="h4">Fragmented global coordination</h3>
+                <dl class="mb-0">
+                  <dt>Problem</dt>
+                  <dd>Testing ownership, status, support resources, and escalation paths were distributed across teams and time zones.</dd>
+                  <dt>Task</dt>
+                  <dd>Centralize smoke testing and UAT coordination across four global teams while supporting a 24/7 follow-the-sun process.</dd>
+                  <dt>Solution</dt>
+                  <dd>Built a command-center workflow that connected schedules, task lists, issue logs, meeting links, support links, and progress views.</dd>
+                </dl>
+              </article>
+            </div>
+
+            <div class="col-lg-6">
+              <article class="problem-card">
+                <p class="project-label mb-2">Problem 02</p>
+                <h3 class="h4">Tester work queues were hard to keep current</h3>
+                <dl class="mb-0">
+                  <dt>Problem</dt>
+                  <dd>Thousands of test steps across dozens of scenarios made it difficult for each tester to find the next actionable item.</dd>
+                  <dt>Task</dt>
+                  <dd>Convert scenario-level testing data into current, owner-specific task lists without manual filtering.</dd>
+                  <dt>Solution</dt>
+                  <dd>Used Excel, Power Query, and Office Scripts to consolidate test steps and generate tester-specific task views.</dd>
+                </dl>
+              </article>
+            </div>
+
+            <div class="col-lg-6">
+              <article class="problem-card">
+                <p class="project-label mb-2">Problem 03</p>
+                <h3 class="h4">Go-live blockers needed visible ownership</h3>
+                <dl class="mb-0">
+                  <dt>Problem</dt>
+                  <dd>Active issues could slow readiness if assigned fixes, retesting status, and escalation ownership were not visible.</dd>
+                  <dt>Task</dt>
+                  <dd>Create a tracker that connected blockers, fixes, retesting, and resolution status for testers and leadership.</dd>
+                  <dt>Solution</dt>
+                  <dd>Created incident and issue-log workflows and supported bridge-line execution by monitoring activity and escalating blockers.</dd>
+                </dl>
+              </article>
+            </div>
+
+            <div class="col-lg-6">
+              <article class="problem-card">
+                <p class="project-label mb-2">Problem 04</p>
+                <h3 class="h4">Leadership needed status without workbook friction</h3>
+                <dl class="mb-0">
+                  <dt>Problem</dt>
+                  <dd>Senior stakeholders needed progress, blocker, and scenario context without digging through raw workbook tabs.</dd>
+                  <dt>Task</dt>
+                  <dd>Make the testing workspace easier to navigate and pair current data with repeatable program updates.</dd>
+                  <dt>Solution</dt>
+                  <dd>Designed user-centered dashboards with program leadership and developed Copilot agents for daily updates and Excel workflow debugging.</dd>
+                </dl>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="system" class="section-pad bg-soft border-top border-bottom">
+        <div class="container">
+          <div class="row g-4 mb-5">
+            <div class="col-lg-4">
+              <p class="section-kicker mb-2">The System</p>
+              <h2 class="h1">A lightweight orchestration layer built around testers.</h2>
+            </div>
+            <div class="col-lg-8">
+              <p class="fs-5 mb-0">
+                I designed the workflow around a simple principle: testers should update the
+                work once, and the system should handle consolidation, status logic, reporting,
+                and handoffs. The interface prioritized clear navigation while the automation
+                worked behind the scenes.
+              </p>
+            </div>
+          </div>
+
+          <div class="workflow" role="group" aria-label="Sanitized testing system workflow">
+            <div class="workflow-step">
+              <span>1</span>
+              <h3 class="h5">Scenario inputs</h3>
+              <p>Structured test plans, owners, steps, statuses, and issue signals.</p>
+            </div>
+            <div class="workflow-arrow" aria-hidden="true">-&gt;</div>
+            <div class="workflow-step">
+              <span>2</span>
+              <h3 class="h5">Consolidation</h3>
+              <p>Power Query standardized distributed inputs into shared progress views.</p>
+            </div>
+            <div class="workflow-arrow" aria-hidden="true">-&gt;</div>
+            <div class="workflow-step">
+              <span>3</span>
+              <h3 class="h5">Automation</h3>
+              <p>Office Scripts and Power Automate refreshed logic and triggered communications.</p>
+            </div>
+            <div class="workflow-arrow" aria-hidden="true">-&gt;</div>
+            <div class="workflow-step">
+              <span>4</span>
+              <h3 class="h5">Execution view</h3>
+              <p>Dashboards and daily updates surfaced progress, ownership, and blockers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="interface" class="section-pad">
+        <div class="container">
+          <div class="row g-4 mb-5">
+            <div class="col-lg-4">
+              <p class="section-kicker mb-2">Interface Design</p>
+              <h2 class="h1">A navigation system built for fast execution.</h2>
+            </div>
+            <div class="col-lg-8">
+              <p class="fs-5 mb-0">
+                The visual design gave testers direct routes to their schedule, current task
+                list, issues log, meeting links, learning items, and production environment.
+                Scenario navigation and color-coded task assignment made a large testing program
+                easier to scan and operate under time pressure.
+              </p>
+            </div>
+          </div>
+
+          <div class="case-gallery">
+            <figure class="gallery-feature">
+              <a href="../assets/case-study/testing-home-dashboard.png" target="_blank" rel="noopener">
+                <img
+                  src="../assets/case-study/testing-home-dashboard.png"
+                  alt="Testing home dashboard with tester links, support links, production environment access, and an overall UAT progress chart"
+                  loading="lazy"
+                >
+              </a>
+              <figcaption>
+                <strong>Testing home dashboard.</strong> A single launch point for tester tasks,
+                issues, support resources, production access, and overall progress.
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-feature gallery-tall">
+              <a href="../assets/case-study/scenario-menu.png" target="_blank" rel="noopener">
+                <img
+                  src="../assets/case-study/scenario-menu.png"
+                  alt="Color-coded scenario menu grouping UAT scenarios by testing site"
+                  loading="lazy"
+                >
+              </a>
+              <figcaption>
+                <strong>Scenario navigation.</strong> Color-coded scenario access organized by
+                site so testers could move quickly from the overview into assigned work.
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-wide">
+              <a href="../assets/case-study/scenario-controls.png" target="_blank" rel="noopener">
+                <img
+                  src="../assets/case-study/scenario-controls.png"
+                  alt="Scenario worksheet header with links back to scenarios, the schedule, owner task list, and issues log"
+                  loading="lazy"
+                >
+              </a>
+              <figcaption>
+                <strong>In-context controls.</strong> Persistent navigation connected each
+                scenario to the schedule, tester-specific task list, and issues workflow.
+              </figcaption>
+            </figure>
+
+            <figure class="gallery-detail">
+              <a href="../assets/case-study/tester-task-grid.png" target="_blank" rel="noopener">
+                <img
+                  src="../assets/case-study/tester-task-grid.png"
+                  alt="Color-coded tester task grid with current UAT steps arranged by tester"
+                  loading="lazy"
+                >
+              </a>
+              <figcaption>
+                <strong>Tester task generation.</strong> Consolidated scenario data was
+                transformed into current, owner-specific lists of actionable steps.
+              </figcaption>
+            </figure>
+          </div>
+          <p class="gallery-note mb-0">
+            Screenshots are tightly scoped to interface design and workflow structure. No personal
+            data, incident descriptions, defect narratives, or detailed test instructions are shown.
+          </p>
+        </div>
+      </section>
+
+      <section id="execution" class="section-pad">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <p class="section-kicker mb-2">Execution</p>
+              <h2 class="h1">The operating model mattered as much as the workbook.</h2>
+            </div>
+            <div class="col-lg-8">
+              <ol class="case-timeline">
+                <li>
+                  <div>
+                    <span>Standardize</span>
+                    <h3 class="h4">Create a shared definition of progress</h3>
+                    <p>Aligned scenario data, ownership, and status fields so distributed teams could be compared without losing context.</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>Enable</span>
+                    <h3 class="h4">Support testers in the workflow</h3>
+                    <p>Created user-centered navigation and responded to tester questions so the system fit the work instead of adding reporting burden.</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>Operate</span>
+                    <h3 class="h4">Run follow-the-sun handoffs</h3>
+                    <p>Coordinated daily progress across global teams and maintained continuity as testing moved between time zones.</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>Resolve</span>
+                    <h3 class="h4">Turn blockers into owned actions</h3>
+                    <p>Worked through issue status, ownership, fixes, and retesting so active blockers stayed visible until resolution.</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>Communicate</span>
+                    <h3 class="h4">Translate test activity into program updates</h3>
+                    <p>Automated refreshes, script execution, and Outlook communications while using Copilot to draft daily status updates from current testing data.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="outcomes" class="section-pad case-outcomes">
+        <div class="container">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-4">
+              <p class="section-kicker mb-2">Outcomes</p>
+              <h2 class="h1">A more coherent, usable testing operation.</h2>
+            </div>
+            <div class="col-lg-8">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="outcome-item">
+                    <h3 class="h5">One operating view</h3>
+                    <p class="mb-0">Distributed scenario data became a consolidated program view with visible ownership and status.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="outcome-item">
+                    <h3 class="h5">Less manual reporting work</h3>
+                    <p class="mb-0">Scheduled refreshes, script execution, and Outlook workflows reduced repeated status consolidation.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="outcome-item">
+                    <h3 class="h5">Faster handoffs</h3>
+                    <p class="mb-0">A shared workflow helped teams continue testing across time zones without rebuilding context.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="outcome-item">
+                    <h3 class="h5">Usability as a control</h3>
+                    <p class="mb-0">Clear navigation, current task lists, and tester support improved the quality and timeliness of status information.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="case-reflection mt-5">
+                <p class="project-label mb-2">What this experience demonstrates</p>
+                <p class="fs-5 mb-0">
+                  I can enter a time-sensitive enterprise program, understand how people and data
+                  move through the process, build a practical technical system, and support
+                  adoption across multiple stakeholder groups. The value was not a single
+                  dashboard or script; it was the integrated operating workflow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad border-top">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-8">
+              <p class="section-kicker mb-2">Explore More</p>
+              <h2 class="h1 mb-3">Production systems, optimization, and enterprise analytics.</h2>
+              <p class="mb-lg-0">
+                Return to the portfolio for the Boeing 787 scheduling model, ERP/SCM dashboard,
+                optimization solvers, and research work.
+              </p>
+            </div>
+            <div class="col-lg-4 d-grid gap-3">
+              <a class="btn btn-dark btn-lg" href="../">View full portfolio</a>
+              <a class="btn btn-outline-dark btn-lg" href="../assets/resume.pdf" target="_blank" rel="noopener">Download resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 border-top">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
+          <p class="mb-0">&copy; 2026 Jishnu Auro Ghosh.</p>
+          <p class="mb-0">Industrial Engineering &middot; Enterprise Systems &middot; Production Operations</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
