@@ -38,6 +38,7 @@ jobs:
           cp -R assets _site/
           [ -d capabilities ] && cp -R capabilities _site/ || true
           [ -d timeline ] && cp -R timeline _site/ || true
+          cp -R molex _site/
           # Built optimization workbench subpage
           cp -R optimization _site/
 

@@ -2,11 +2,11 @@
 
 Portfolio website for Jishnu Ghosh, an Industrial Engineer from Purdue University focused on:
 
-- Optimization
-- Manufacturing systems
-- Operations research
+- Enterprise systems and workflow automation
+- Production scheduling
+- Optimization and operations research
+- Manufacturing and supply chain decision support
 - Industrial analytics
-- Engineering software systems
 
 ## Website
 
@@ -14,6 +14,7 @@ https://jishnughosh.com
 
 ## Featured Work
 
+- Global ERP testing orchestration: Sanitized case study of a June-July 2026 Molex/Actalent engagement centralizing smoke testing and UAT across four global teams for an ERP program, supported by Excel, Power Query, Office Scripts, Power Automate, Outlook, and Copilot. The case study includes selected interface screenshots showing the dashboard, scenario menu, navigation controls, and tester task views.
 - Boeing 787 FGI scheduling optimization: Purdue IE capstone model for Boeing 787 movement through Final Goods Inventory and delivery operations, with Python scheduling logic, staged Excel inputs, movement feasibility rules, labor allocation outputs, and KPI reporting.
 - ERP / SCM dashboard system: Role-based PHP/MySQL/JavaScript dashboard for supply chain and enterprise systems analysis, including shipment reliability, disruption exposure, supplier risk, and financial-health views.
 - Optimization and analytics tooling: From-scratch Python implementations of two-phase Simplex and primal-dual Interior Point Method solvers, with structured tests and Gurobi benchmark verification.
@@ -21,13 +22,12 @@ https://jishnughosh.com
 
 ## Technical Stack
 
-- HTML, CSS, and JavaScript
-- Bootstrap
-- Python
-- SQL
+- HTML, CSS, JavaScript, and Bootstrap
+- Excel, Power Query, Office Scripts, Power Automate, and Outlook workflows
+- Python and SQL
 - PHP and MySQL project work
 - Jupyter, NumPy, pandas, matplotlib, scikit-learn
-- GitHub Pages and Cloudflare
+- GitHub Pages
 
 ## Repository Purpose
 
